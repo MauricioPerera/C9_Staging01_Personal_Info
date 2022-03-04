@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+.personalInfo {
+  font-family: "Poppins", sans-serif;
+}
+.personalInfo h2 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+}
+.personalInfo label {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  width: 100%;
+}
+.personalInfo .inputContainer {
+  border-bottom: solid 1px #9b9b9b;
+  padding: 24px 0px;
+  position: relative;
+}
+.personalInfo .inputContainer span {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  text-decoration-line: underline;
+  position: absolute;
+  right: 0;
+  color: #000000;
+}
+.personalInfo .inputContainer,
+.personalInfo .inputContainer input {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+}
+.personalInfo .inputContainer input.disabled {
+  border: transparent 0px;
+}
+*.hide {
+  display: none;
+}
