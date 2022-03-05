@@ -26,7 +26,6 @@ export default function InputContainer({ label, value }) {
       </span>
 
       <TextInput
-        className={isActive ? "hide" : null}
         onChangeText={(newText) => setText(newText)}
         defaultValue={value}
         style={isActive ? { display: "none" } : { display: "block" }}
