@@ -28,14 +28,12 @@
   color: #000000;
 }
 .personalInfo .inputContainer,
-.personalInfo .inputContainer input {
+.personalInfo .inputContainer input,
+.personalInfo .inputContainer div {
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
 }
 .personalInfo .inputContainer input.disabled {
   border: transparent 0px;
-}
-*.hide {
-  display: none;
 }
