@@ -11,6 +11,7 @@ I'm not frequently use React or Github by this i try to learn in the practice ho
 - I can refer [**the documentation of React Native**](https://reactnative.dev/docs/components-and-apis) to see **native components** and not use an html elements
 - I can refer [**the documentation of React Native**](https://reactnative.dev/docs/components-and-apis) to see examples of use **native components** and his attributes
 - I need to get used to **using component attributes**
+- I need remember **update the dependencies in the repo** when i edit this
 
 ## Next steps
 
