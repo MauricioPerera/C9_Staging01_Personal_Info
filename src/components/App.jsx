@@ -1,4 +1,4 @@
-import InputContainer from "./InputContainer";
+import InputNameContainer from "./InputNameContainer";
 import "../styles.css";
 export default function App() {
   const user = {
@@ -36,7 +36,7 @@ export default function App() {
   return (
     <div className="personalInfo">
       <h2>Información personal</h2>
-      <InputContainer label="Nombre legal" value={name} />
+      <InputNameContainer label="Nombre legal" value={name} />
     </div>
   );
 }
