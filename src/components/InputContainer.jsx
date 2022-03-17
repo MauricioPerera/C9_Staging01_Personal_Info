@@ -12,27 +12,28 @@ export default function InputContainer({ label, value }) {
   return (
     <div className="inputContainer">
       <label>{label}</label>
-      <span
-        style={isActive ? { display: "block" } : { display: "none" }}
-        onClick={handleGameClick}
-      >
+      {isActive &&
+      <span onClick={handleGameClick}>
         Editar
       </span>
-      <span
-        style={isActive ? { display: "none" } : { display: "block" }}
-        onClick={handleGameClick}
-      >
+      }
+      {!isActive &&
+      <span onClick={handleGameClick}>
         Guardar
       </span>
+      }
 
+      {!isActive &&
       <TextInput
         onChangeText={(newText) => setText(newText)}
         defaultValue={value}
-        style={isActive ? { display: "none" } : { display: "block" }}
       />
-      <Text style={isActive ? { display: "block" } : { display: "none" }}>
+      }
+      {isActive &&
+      <Text >
         {text ? text : value}
       </Text>
+      }
     </div>
   );
 }
