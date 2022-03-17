@@ -28,11 +28,24 @@
   right: 0;
   color: #000000;
 }
-.personalInfo .inputContainer,
-.personalInfo .inputContainer input,
-.personalInfo .inputContainer div {
+.data-text,
+.data-input {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.data-text div,
+.data-input input {
+  margin-right: 1em;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
   display: block;
+}
+.data-input input {
+  border-bottom: 1px solid;
+  margin-top: 1em;
+}
+.data-input p {
+  font-size: 12px;
 }
