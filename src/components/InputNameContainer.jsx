@@ -18,37 +18,25 @@ export default function InputContainer({ label, value }) {
       <div className="data-input">
         {!isActive && (
           <div className="data-input-item">
-            <TextInput
-              onChangeText={(newText) => setText(newText)}
-              defaultValue={value.firstName}
-            />
+            <TextInput onChangeText={(newText) => setText(newText)} defaultValue={value.firstName}/>
             <sub>Primer Nombre</sub>
           </div>
         )}
         {!isActive && (
           <div className="data-input-item">
-            <TextInput
-              onChangeText={(newText) => setText(newText)}
-              defaultValue={value.secondName}
-            />
+            <TextInput onChangeText={(newText) => setText(newText)} defaultValue={value.secondName}/>
             <sub>Segundo Nombre</sub>
           </div>
         )}
         {!isActive && (
           <div className="data-input-item">
-            <TextInput
-              onChangeText={(newText) => setText(newText)}
-              defaultValue={value.firstSurname}
-            />
+            <TextInput onChangeText={(newText) => setText(newText)} defaultValue={value.firstSurname}/>
             <sub>Primer Apellido</sub>
           </div>
         )}
         {!isActive && (
           <div className="data-input-item">
-            <TextInput
-              onChangeText={(newText) => setText(newText)}
-              defaultValue={value.secondSurname}
-            />
+            <TextInput onChangeText={(newText) => setText(newText)} defaultValue={value.secondSurname}/>
             <sub>Segundo Apellido</sub>
           </div>
         )}
@@ -56,15 +44,7 @@ export default function InputContainer({ label, value }) {
       <div className="data-text">
         {isActive && (
           <Text>
-            {text
-              ? text
-              : value.firstName +
-                " " +
-                value.secondName +
-                " " +
-                value.firstSurname +
-                " " +
-                value.secondSurname}
+            {text ? text : value.firstName + " " + value.secondName + " " + value.firstSurname + " " + value.secondSurname}
           </Text>
         )}
       </div>
