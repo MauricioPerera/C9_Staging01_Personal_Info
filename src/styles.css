@@ -34,15 +34,16 @@
   flex-direction: row;
   flex-wrap: wrap;
 }
+
 .data-text div,
 .data-input input {
-  margin-right: 1em;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
   display: block;
 }
 .data-input input {
+  margin-right: 1em;
   border-bottom: 1px solid;
   margin-top: 1em;
 }
