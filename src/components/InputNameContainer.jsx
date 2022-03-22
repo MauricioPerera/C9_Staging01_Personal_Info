@@ -54,10 +54,19 @@ export default function InputContainer({ label, value }) {
         )}
       </div>
       <div className="data-text">
-        {isActive && <Text>{text ? text : value.firstName}</Text>}
-        {isActive && <Text>{text ? text : value.secondName}</Text>}
-        {isActive && <Text>{text ? text : value.firstSurname}</Text>}
-        {isActive && <Text>{text ? text : value.secondSurname}</Text>}
+        {isActive && (
+          <Text>
+            {text
+              ? text
+              : value.firstName +
+                " " +
+                value.secondName +
+                " " +
+                value.firstSurname +
+                " " +
+                value.secondSurname}
+          </Text>
+        )}
       </div>
     </div>
   );
